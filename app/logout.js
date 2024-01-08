@@ -6,7 +6,7 @@ const logout = document.querySelector("#logout");
 logout.addEventListener("click", async (e) => {
   e.preventDefault();
   try {
-    await signOut(auth)
+    await getAuth().signOut();
     console.log("signup out");
   } catch (error) {
     console.log(error)
